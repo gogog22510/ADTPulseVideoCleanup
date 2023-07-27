@@ -5,7 +5,7 @@ function deleteVideo() {
       window.confirm=realConfirm;
       return true;
     };
-    $('.deleteMediaBtn').click();
+    document.getElementsByClassName("deleteMediaBtn")[0].click();
 }
 
 function deleteVideoTest() {
