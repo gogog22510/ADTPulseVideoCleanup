@@ -1,4 +1,5 @@
 var count = 0;
+var delayTime = 1000;
 function deleteVideo() {
     var realConfirm=window.confirm;
     window.confirm=function(){
@@ -12,11 +13,11 @@ function deleteVideoTest() {
     if(count > 0) {
         count--;
         deleteVideo();
-        setTimeout(deleteVideoTest, 1000);
+        setTimeout(deleteVideoTest, delayTime);
     }
 }
 
 function startDelete(num) {
     count = num;
-    setTimeout(deleteVideoTest, 1000);
+    setTimeout(deleteVideoTest, delayTime);
 }
